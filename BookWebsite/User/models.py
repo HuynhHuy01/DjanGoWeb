@@ -128,7 +128,7 @@ class BookCardsModel(models.Model):
     book_subtitle = models.CharField(max_length=100)
     book_description = models.TextField(max_length=300)
     full_description = models.TextField(max_length=700)
-    book_quantity = models.IntegerField(default=0)
+    book_quantity = models.FloatField()
     book_color = models.CharField(max_length=100, blank=True)
     book_size = models.CharField(max_length=100, blank=True)
     
@@ -287,7 +287,7 @@ class OrderItem(models.Model):
     
     @property
     def get_totalprice(self):
-       total = int(self.book.book_cost) * self.quantity
+       total = self.book.book_cost * self.quantity
        return total    
 
 
@@ -311,3 +311,10 @@ class Agent(models.Model):
     def __str__(self):
         return str(self.user)
 
+class ChatBotModel(models.Model):
+    text = models.TextField()
+    class meta:
+        verbose_name_plural = "Responses"
+
+    def __str__(self):
+        return self.text
