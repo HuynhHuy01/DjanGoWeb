@@ -158,6 +158,21 @@
                 "Hey there!, I'm still learning stuff can you please elaborate it?",
                 "You know, according to my lawyer, I don't have to answer that."
             ]
+        },
+
+        {
+            "tag": "book",
+            "patterns": [
+                "What is the best book ? ",
+                "Could you show me the seller book",
+                "Could you recommend your book"
+            ],
+            "responses": [
+                "Hey there!,I recommend you some books like Dac Nhan Tam,Tony Buoi Sang"
+
+            ]
         }
+
+
     ]
 }

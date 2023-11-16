@@ -17,7 +17,8 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
-environ.Env.read_env()
+environ.Env.read_env() 
+# git 
 
 DEBUG = env('DEBUG')
 SECRET_KEY = env('SECRET_KEY')
@@ -35,7 +36,7 @@ SECRET_KEY = 'django-insecure-&$50d$a%bi003us+yd2ms(%b6mln#kv@&lajs#mj-nb(9v!pix
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app']
 
 # Application definition
 
