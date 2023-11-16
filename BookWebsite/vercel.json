@@ -10,8 +10,8 @@
 
     "routes": [{
 
-        "src": "/(.*)",
-        "dest": "BookWebsite/wsgi.py"
+        "source": "/(.*)",
+        "destination": "BookWebsite/wsgi.py"
     }]
 
 }
